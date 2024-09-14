@@ -6,7 +6,7 @@ import { ChatMessage } from "@/types"; // Adjust the import path if needed
 
 const openai = new OpenAI();
 
-export async function streamMessage(chatMessages: ChatMessage[]) {
+export async function streamMessage(chatMessages: chatMessage[]) {
   const stream = createStreamableValue("");
 
   (async () => {
