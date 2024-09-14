@@ -2,6 +2,7 @@
 
 import OpenAI from "openai";
 import { createStreamableValue } from "ai/rsc";
+import { ChatMessage } from "@/types"; // Adjust the import path if needed
 
 const openai = new OpenAI();
 

@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef, KeyboardEvent } from "react";
 import { Send } from "lucide-react";
-import { streamMessage, ChatMessage } from "@/actions/stream-message";
+import { streamMessage } from "@/actions/stream-message";
+import { ChatMessage } from "@/types"; // Add this import
 import { readStreamableValue } from "ai/rsc";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
