@@ -65,7 +65,7 @@ const ChatComponent = () => {
     <div className="flex min-h-screen bg-background text-foreground font-sans">
       <div className="flex-grow flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-2xl bg-card rounded-lg shadow-lg overflow-hidden">
-          <h1 className="text-2xl font-bold p-4 text-center border-b border-border text-black">Chat</h1>
+          <h1 className="text-2xl font-bold p-4 text-center border-b border-border text-black">Täcker försäkringen?</h1>
 
           <ScrollArea className="h-[60vh] p-4">
             {messages.map((message, index) => (
