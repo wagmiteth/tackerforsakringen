@@ -8,6 +8,11 @@ import { readStreamableValue } from "ai/rsc";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import ReactMarkdown from 'react-markdown';
+
+function removeSources(content: string): string {
+  return content.replace(/【[^】]*】/g, '');
+}
 
 const ChatComponent = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -85,7 +90,7 @@ const ChatComponent = () => {
                       : "bg-secondary text-secondary-foreground"
                   }`}
                 >
-                  {message.content}
+                  <ReactMarkdown>{removeSources(message.content)}</ReactMarkdown>
                 </div>
               </div>
             ))}
